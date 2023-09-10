@@ -1,15 +1,15 @@
-import { LandingNavbar } from "@/components/landing-navbar";
-import { LandingHero } from "@/components/landing-hero";
-import { LandingContent } from "@/components/landing-content";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
+import HomePage from "@/components/Home/HomePage";
 
-const LandingPage = () => {
-  return ( 
-    <div className="h-full ">
-      <LandingNavbar />
-      <LandingHero />
-      <LandingContent />
-    </div>
-   );
+const dmSans = DM_Sans({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
+
+export default function Home() {
+  return (
+    <main className={`w-full h-full ${dmSans.className}`}>
+      <HomePage />
+    </main>
+  );
 }
- 
-export default LandingPage;
