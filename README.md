@@ -5,7 +5,6 @@ VarsityAI is a tool to help academic researchers save hundreds of hours by elimi
 ## Developers
 
   - Sidharth Das
-  - Nipun Theekshana
 
 
 ## Environment Configuration
